@@ -81,5 +81,9 @@ namespace CompositeExample1 {
 
   const imageEditor = new ImageEditor();
   imageEditor.load();
-  imageEditor.groupSelected();
+  imageEditor.groupSelected([
+    new Dot(1, 4),
+    new Circle(4, 5, 30),
+    new Dot(3, 3)
+  ]);
 }
